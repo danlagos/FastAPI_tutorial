@@ -19,9 +19,15 @@ async def read_all_books():
     return BOOKS
 
 
-@app.get("books/author/{author_name}")
+@app.get("/books/author/{author_name}")
 async def read_books_by_author(author_name: str):
-    return next((author for author in BOOKS if author.get('author').casefold() == author_name.casefold()), None)
+    return [book for book in BOOKS if book.get('author').casefold() == author_name.casefold()] 
+
+
+@app.get("/books/query")
+async def read_author_by_query(author: str):
+    return [book for book in BOOKS if book.get('author').casefold() == author.casefold()]
+
 
 @app.get("/books/{book_title}")
 async def read_books(book_title: str):
