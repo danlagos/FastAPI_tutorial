@@ -1,6 +1,6 @@
 # FastAPI_tutorial
 
-##Books Projct
+## Books Project
 
 - A list of books with title, author, and category.
 
