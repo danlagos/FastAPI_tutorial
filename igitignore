@@ -1,0 +1,6 @@
+.vscode/
+.notes/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.docx

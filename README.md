@@ -15,7 +15,7 @@
 
 - Will include CRUD operations and HTTP request methods
 - But also include:
-    - Data Validation
+    - Data Validation (pydantic)
     - Exception Handling
     - Status Codes
     - Swagger Configuration
